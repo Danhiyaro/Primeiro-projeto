@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/imagem3.png">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="pag1.html">Página 1</a>
+        <a href="pag2.html">Página 2</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <h1>Esta é a Página 1, e este aúdio é infernal, cuidado.</h1>
+
+     <h1>Reprodução de áudio</h1>
+
+    <button type="button" commandfor="confirmacao" command="show-modal">
+        Reproduzir áudio
+    </button>
+
+    <dialog id="confirmacao">
+
+        <h2>Confirmação</h2>
+
+        <p>
+            Você deseja realmente reproduzir este áudio?
+        </p>
+
+        <button type="button" commandfor="confirmacao" command="close">
+            Cancelar
+        </button>
+
+        <button type="button" commandfor="confirmacao" command="close">
+            Sim, quero reproduzir
+        </button>
+
+    </dialog>
+
+    <br><br>
+
+    <audio controls>
+        <source src="audio/picapau.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+</body>
+</html>
